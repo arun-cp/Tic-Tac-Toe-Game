@@ -1,0 +1,15 @@
+
+.board {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+.board div {
+   padding: 5px;
+}
+
+.board div button {
+    background-color: brown;
+    height: 80px;
+    width: 80px;
+}
