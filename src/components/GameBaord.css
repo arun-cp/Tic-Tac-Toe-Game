@@ -10,6 +10,10 @@
 
 .board div button {
     background-color: brown;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(161, 233, 15);
+    font-weight: bolder;
     height: 80px;
     width: 80px;
 }

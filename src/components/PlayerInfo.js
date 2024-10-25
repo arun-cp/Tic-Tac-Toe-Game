@@ -8,7 +8,7 @@ function handleClick() {
     setEdit(!edit);
 }
 if (edit)
-    EditablePlayer = <input type="text" defaultValue={plName} onChange={(e) => setPlName(e.target.value)}></input>;
+    EditablePlayer = <><input type="text" defaultValue={plName} onChange={(e) => setPlName(e.target.value)}></input><br/></>;
 
     return(
         <>

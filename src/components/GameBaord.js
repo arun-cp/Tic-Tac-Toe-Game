@@ -1,18 +1,34 @@
 import './GameBaord.css';
+import { useState } from "react";
 
 const initgameBoard = [
-    [1,2,3],
-    [1,2,3],
-    [1,2,3]
+    [null,null,null],
+    [null,null,null],
+    [null,null,null]
 ];
 
-export default function GameBoard() {
+export default function GameBoard(props) {
+    const [gameBoard, setGameBoard] = useState(initgameBoard);
+
+    function handlePLSelection(rowIndex, colIndex) {
+        setGameBoard((prevGameBoard) => {
+            const newGameBoard = prevGameBoard.map((row, rIndex) =>
+                row.map((col, cIndex) =>
+                    rIndex === rowIndex && cIndex === colIndex ? props.activePlayer : col
+                )
+            );
+            return newGameBoard;
+        });
+        props.setPlayer();
+    }
+
+
     return(
        <div className='board'>
-         {initgameBoard.map((row)=> (
-               row.map((col)=> (
+         {gameBoard.map((row, rowIndex) => (
+               row.map((col, colIndex) => (
                 <div>
-                    <button>{col}</button>
+                    <button onClick={() => handlePLSelection(rowIndex, colIndex)}>{col}</button>
                 </div>) )
           ))}
        </div>
