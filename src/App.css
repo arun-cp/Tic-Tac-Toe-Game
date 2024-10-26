@@ -8,22 +8,60 @@ img {
   width: 5%;
 }
 
+button {
+  background-color: rgba(47, 44, 44, 0.538);
+  height: 23px;
+  width: 70px;
+  border-radius: 5px;
+}
+input {
+  max-width: 70px;
+  background-color: rgba(47, 44, 44, 0.538);
+  border-radius: 2px;
+}
+
+.gamebody {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.logger {
+  background-color: rgba(47, 44, 44, 0.538);
+  width: 40%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+}
+
 .game {
   background-color: rgba(47, 44, 44, 0.538);
-  width: 50%;
-  margin: auto;
+  width: 40%;
+  margin: 5px;
   padding: 10px;
   border-radius: 5px;
 }
 .gamedetail {
   display: flex;
   justify-content: space-evenly;
- 
 }
+
+.gamedetail div {
+  border-width: 2px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 120px;
+  width: 150px;
+}
+
 .gamedetail div.active {
+  background-color: rgba(139, 238, 41, 0.519);
   border-color: black ;
   border-width: 2px;
   border-style: solid;
   padding: 10px;
   border-radius: 5px;
+  height: 120px;
+  width: 150px;
 }
