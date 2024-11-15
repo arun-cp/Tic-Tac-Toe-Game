@@ -43,8 +43,10 @@ function App() {
   
     return (
     <div className="App">
-      <img src={logo} alt="Logo" />
-      <h1>TIC TAC TOE</h1>
+      <div className="gamehead">
+        <div><img src={logo} alt="Logo" /></div>
+        <div><img src="https://see.fontimg.com/api/rf5/Rpaj3/N2UzZTNkZWUzMTA2NDQ1Yjk5MTQ4NzEyODQzYmUzZWYudHRm/VElDIFRBQyBUT0U/super-bubble.png?r=fs&h=93&w=1250&fg=2D22CA&bg=4D39D3&tb=1&s=74" alt="Logo" /></div>
+      </div><br/>
       <div className="gamebody">
         <div className="game">
           <div className="gamedetail">
